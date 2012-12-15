@@ -69,7 +69,9 @@ def create_csv(lj, tm, filep):
 #        tm_ids = [join_info['team_id'] for join_info in lj[l]]
         for ji in lj[l]:
             # write rec to the csv file
-            writer.writerow([l.replace('l_',''),ji['team_id'].replace('t_','')])
+
+#            writer.writerow([l.replace('l_',''),ji['team_id'].replace('t_','')])
+            writer.writerow([l,ji['team_id']])
         l_count+=1
         if l_count%1000==0:
             print str(l_count) + '/' + str(len(lj))
