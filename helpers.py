@@ -2,6 +2,7 @@ import csv
 import os
 from ujson import loads
 from json import dumps
+from dateutil.parser import parse
     
 def read_csv_file(filep):
     ret = csv.reader(open(filep,'rU'), delimiter=',')
@@ -21,7 +22,21 @@ def parse_teams_csv_data(reader):
     for rec in reader:
         ## there are problems with the data. This if statement is a conservative estimate for the lenders 
         l = len(rec)
-        ret[rec[0]] = {'id':rec[0],'name':rec[2] ,'loc':rec[4],'theme':rec[3], 'desc':rec[5:l-3], 'date=':rec[1], 'misc':rec[l-3:l] }
+        ret[rec[0]] = {'id':rec[0],'name':rec[2] ,'loc':rec[4],'theme':rec[3], 'desc':rec[5:l-3], 'date=':rec[1], 'memb_count':rec[l-3], 'loan_count':rec[l-2], 'loan_amt':rec[l-1], 'misc':rec[l-3:l] }
+    return ret
+
+def get_till_month(date):
+    print date
+    date  = parse(date).replace(day=1,minute=0,second=0,tzinfo=None)
+    return date
+def get_timeline_csv_data(reader):
+    ret ={}
+    for rec in reader:
+        if rec[2] in ret:
+            print rec
+            ret[get_till_month(rec[2])] += 1# {'id':rec[0],'name':rec[2] ,'loc':rec[4],'theme':rec[3], 'desc':rec[5:l-3], 'date=':rec[1], 'memb_count':rec[l-3], 'loan_count':rec[l-2], 'loan_amt':rec[l-1], 'misc':rec[l-3:l] }
+        else:
+            ret[rec[2]]=1
     return ret
 
 def team_joins_reader(reader):

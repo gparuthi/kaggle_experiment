@@ -1,0 +1,1243 @@
+cd ../kaggle_experiment/data/
+%run ../load_data.py
+for i in testd:
+    if 'l_'+i in lender_joins:
+        print 'found'
+f = open('./test.csv')
+tesd = f.readlines()
+testd
+tesd
+f = open('./train.csv')
+train = f.readlines()
+train
+f = open('./train.csv')
+train = f.read()
+train = train.split('\r\n')
+train
+del train[0]
+train
+train_teams = {}
+for l in train:
+    d = l.split(',')
+    teams = d[1].split(' ')
+    for t in teams:
+        if t in train_teams:
+            train_teams[t]+=1
+        else:
+            train_teams[t]=1
+train_teams = {}
+for l in train:
+    d = l.split(',')
+    print d
+    teams = d[1].split(' ')
+    for t in teams:
+        if t in train_teams:
+            train_teams[t]+=1
+        else:
+            train_teams[t]=1
+train_teams = {}
+for l in train:
+    d = l.split(',')
+    print l
+    teams = d[1].split(' ')
+    for t in teams:
+        if t in train_teams:
+            train_teams[t]+=1
+        else:
+            train_teams[t]=1
+train_teams = {}
+for l in train:
+    d = l.split(',')
+    print d
+    teams = d[1].split(' ')
+    for t in teams:
+        if t in train_teams:
+            train_teams[t]+=1
+        else:
+            train_teams[t]=1
+train_teams = {}
+for l in train:
+    d = l.split(',')
+    print d[1]
+    teams = d[1].split(' ')
+    for t in teams:
+        if t in train_teams:
+            train_teams[t]+=1
+        else:
+            train_teams[t]=1
+train_teams = {}
+for l in train:
+    d = l.split(',')
+    teams = []
+    if ' ' in d[1]:
+        teams = d[1].split(' ')
+    else:
+        teams.append(d[1])
+    for t in teams:
+        if t in train_teams:
+            train_teams[t]+=1
+        else:
+            train_teams[t]=1
+train_teams = {}
+for l in train:
+    d = l.split(',')
+    teams = []
+    print len(d)
+    if ' ' in d[1]:
+        teams = d[1].split(' ')
+    else:
+        teams.append(d[1])
+    for t in teams:
+        if t in train_teams:
+            train_teams[t]+=1
+        else:
+            train_teams[t]=1
+train_teams = {}
+for l in train:
+    d = l.split(',')
+    print d[1]
+    teams = d[1].split(' ')
+    for t in teams:
+        if t in train_teams:
+            train_teams[t]+=1
+        else:
+            train_teams[t]=1
+train_teams = {}
+for l in train:
+    d = l.split(',')
+    print d
+    teams = d[1].split(' ')
+    for t in teams:
+        if t in train_teams:
+            train_teams[t]+=1
+        else:
+            train_teams[t]=1
+del train[-1]
+train_teams = {}
+for l in train:
+    d = l.split(',')
+    print d
+    teams = d[1].split(' ')
+    for t in teams:
+        if t in train_teams:
+            train_teams[t]+=1
+        else:
+            train_teams[t]=1
+train_teams
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+reverse(train_teams_items)
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+for kvpair in train_teams_items:
+    t_id = kvpair[1]
+    try{
+        print teams[t_id]
+for kvpair in train_teams_items:
+    t_id = kvpair[1]
+    try{
+        print teams[t_id]
+        }
+    catch KeyError:
+        print 'Key not found: '+ t_id
+for kvpair in train_teams_items:
+    t_id = kvpair[1]
+    try{
+        print teams[t_id]
+        }
+    catch KeyError:
+        print 'Key not found: '+ str(t_id)
+for kvpair in train_teams_items:
+    t_id = kvpair[1]
+    try:
+        print teams[t_id]
+        
+    catch KeyError:
+        print 'Key not found: '+ str(t_id)
+for kvpair in train_teams_items:
+    t_id = kvpair[1]
+    try:
+        print teams[t_id]
+        
+    except KeyError:
+        print 'Key not found: '+ str(t_id)
+for kvpair in train_teams_items:
+    t_id = kvpair[1]
+    try:
+        print teams[number(t_id)]
+        
+    except KeyError:
+        print 'Key not found: '+ str(t_id)
+number('11')
+int('11')
+for kvpair in train_teams_items:
+    t_id = int(kvpair[1])
+    try:
+        print teams[number(t_id)]
+        
+    except KeyError:
+        print 'Key not found: '+ str(t_id)
+for kvpair in train_teams_items:
+    print kvpair[1]
+    t_id = int(kvpair[1])
+    try:
+        print teams[number(t_id)]
+        
+    except KeyError:
+        print 'Key not found: '+ str(t_id)
+for kvpair in train_teams_items:
+    print kvpair[1]
+    t_id = int(kvpair[1])
+    try:
+        print teams[int(t_id)]
+        
+    except KeyError:
+        print 'Key not found: '+ str(t_id)
+for kvpair in train_teams_items:
+    print kvpair[1]
+    t_id = int(kvpair[1])
+    try:
+        print teams[t_id]
+        
+    except KeyError:
+        print 'Key not found: '+ str(t_id)
+for kvpair in train_teams_items:
+    print kvpair[1]
+    t_id = int(kvpair[1])
+    try:
+        print teams['l_'+t_id]
+    except KeyError:
+        print 'Key not found: '+ str(t_id)
+teams.keys()[0]
+teams[0]
+%run ../load_data.py
+for kvpair in train_teams_items:
+    print kvpair[1]
+    t_id = int(kvpair[1])
+    try:
+        print teams['l_'+t_id]
+    except KeyError:
+        print 'Key not found: '+ str(t_id)
+for kvpair in train_teams_items:
+    print kvpair[1]
+    t_id = int(kvpair[1])
+    try:
+        print teams['t_'+str(t_id)]
+    except KeyError:
+        print 'Key not found: '+ str(t_id)
+for kvpair in train_teams_items:
+    print kvpair[1]
+    t_id = int(kvpair[1])
+    try:
+        print teams['t_'+str(t_id)]
+    except KeyError:
+        print 'Key not found: '+ str(t_id)
+train_teams = {}
+for l in train:
+    d = l.split(',')
+    print d
+    teams_ = d[1].split(' ')
+    for t in teams_:
+        t_n = int(t.remove('\"'))
+        if t in train_teams:
+            train_teams[t]+=1
+        else:
+            train_teams[t]=1
+train_teams = {}
+for l in train:
+    d = l.split(',')
+    print d
+    teams_ = d[1].split(' ')
+    for t in teams_:
+        t_n = int(t.replace('\"',''))
+        if t in train_teams:
+            train_teams[t]+=1
+        else:
+            train_teams[t]=1
+for kvpair in train_teams_items:
+    print kvpair[1]
+    t_id = int(kvpair[1])
+    try:
+        print teams['t_'+str(t_id)]
+    except KeyError:
+        print 'Key not found: '+ str(t_id)
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+for kvpair in train_teams_items:
+    print kvpair[1]
+    t_id = int(kvpair[1])
+    try:
+        print teams['t_'+str(t_id)]
+    except KeyError:
+        print 'Key not found: '+ str(t_id)
+train_teams
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+print train_teams
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+train_teams = {}
+for l in train:
+    d = l.split(',')
+    print d
+    teams_ = d[1].split(' ')
+    for t in teams_:
+        t_n = int(t.replace('\"',''))
+        if t_n in train_teams:
+            train_teams[t_n]+=1
+        else:
+            train_teams[t_n]=1
+print train_teams
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+print train_teams
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+print train_teams_items
+for kvpair in train_teams_items:
+    print kvpair[1]
+    t_id = int(kvpair[1])
+    try:
+        print teams['t_'+str(t_id)]
+    except KeyError:
+        print 'Key not found: '+ str(t_id)
+for tkv in train_teams_items:
+    print tkv
+for tkv in train_teams_items:
+    print tkv[1]
+for kvpair in train_teams_items:
+    print kvpair[1]
+    t_id = int(kvpair[1])
+    try:
+        print teams['t_'+str(t_id)]
+    except KeyError:
+        print 'Key not found: '+ str(t_id)
+tesd
+f = open('./train.csv')
+train = f.read()
+train = train.split('\r\n')
+f = open('./test.csv')
+test = f.read()
+test = train.split('\r\n')
+f = open('./train.csv')
+train = f.read()
+train = train.split('\r\n')
+f = open('./test.csv')
+test = f.read()
+test = test.split('\r\n')
+test
+del test[0]
+test
+del test[-1]
+test
+train_teams
+for t_id in test:
+    if t_id in train_teams:
+        print t_id
+for t_id in test:
+    if t_id not in teams:
+        print t_id
+for t_id in test:
+    if 't_'+str(t_id) not in teams:
+        print t_id
+for tkv in train_teams_items:
+    print tkv[1]
+for t_ in test:
+    t_id ='t_'+str(t_id)
+    if t_id not in teams:
+        print t_id
+for t_ in test:
+    t_id ='t_'+str(t_)
+    if t_id not in teams:
+        print t_id
+for t_ in test:
+    t_id ='t_'+str(t_)
+    if t_id in teams:
+        print t_id
+for t_ in test:
+    t_id ='t_'+str(t_)
+    if t_id not in teams:
+        print t_id
+for l_ in test:
+    l_id ='l_'+str(t_)
+    if l_id not in lenders:
+        print l_id
+test
+for l_ in test:
+    l_id ='l_'+str(l_)
+    if l_id not in lenders:
+        print l_id
+for l_ in test:
+    l_id ='l_'+str(l_)
+    if l_id in lenders:
+        print l_id
+train
+train_teams = {}
+train_lenders = {}
+for l in train:
+    d = l.split(',')
+    print d
+    teams_ = d[1].split(' ')
+    for t in teams_:
+        t_n = int(t.replace('\"',''))
+        if t_n in train_teams:
+            train_teams[t_n]+=1
+        else:
+            train_teams[t_n]=1
+            
+    # add lenders
+    l_id = 'l_'+ d[0]
+    if l_id in train_lenders:
+        train_lenders[l_id]+=1
+    else
+        train_lenders[l_id]=1
+train_teams = {}
+train_lenders = {}
+for l in train:
+    d = l.split(',')
+    print d
+    teams_ = d[1].split(' ')
+    for t in teams_:
+        t_n = int(t.replace('\"',''))
+        if t_n in train_teams:
+            train_teams[t_n]+=1
+        else:
+            train_teams[t_n]=1
+            
+    # add lenders
+    l_id = 'l_'+ d[0]
+    if l_id in train_lenders:
+        train_lenders[l_id]+=1
+    else:
+        train_lenders[l_id]=1
+print train[0]
+print train[-1]
+del train[0]
+del train[-1]
+train_teams = {}
+train_lenders = {}
+for l in train:
+    d = l.split(',')
+    print d
+    teams_ = d[1].split(' ')
+    for t in teams_:
+        t_n = int(t.replace('\"',''))
+        if t_n in train_teams:
+            train_teams[t_n]+=1
+        else:
+            train_teams[t_n]=1
+            
+    # add lenders
+    l_id = 'l_'+ d[0]
+    if l_id in train_lenders:
+        train_lenders[l_id]+=1
+    else:
+        train_lenders[l_id]=1
+train_lenders
+for l_ in test:
+    l_id ='l_'+str(l_)
+    if l_id in train_lenders:
+        print l_id
+train_teams = {}
+train_lenders = {}
+for l in train:
+    d = l.split(',')
+    print d
+    teams_ = d[1].split(' ')
+    for t in teams_:
+        t_n = 't_'+(t.replace('\"',''))
+        if t_n in train_teams:
+            train_teams[t_n]+=1
+        else:
+            train_teams[t_n]=1
+            
+    # add lenders
+    l_id = 'l_'+ d[0]
+    if l_id in train_lenders:
+        train_lenders[l_id]+=1
+    else:
+        train_lenders[l_id]=1
+train_teams = {}
+train_lenders = {}
+for l in train:
+    d = l.split(',')
+    #print d
+    teams_ = d[1].split(' ')
+    for t in teams_:
+        t_n = 't_'+(t.replace('\"',''))
+        if t_n in train_teams:
+            train_teams[t_n]+=1
+        else:
+            train_teams[t_n]=1
+            
+    # add lenders
+    l_id = 'l_'+ d[0]
+    if l_id in train_lenders:
+        train_lenders[l_id]+=1
+    else:
+        train_lenders[l_id]=1
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+
+print train_teams_items
+for kvpair in train_teams_items:
+    print kvpair[1]
+    t_id = int(kvpair[1])
+    try:
+        print teams[str(t_id)]
+    except KeyError:
+        print 'Key not found: '+ str(t_id)
+for kvpair in train_teams_items:
+    print kvpair[1]
+    t_id = (kvpair[1])
+    try:
+        print teams[str(t_id)]
+    except KeyError:
+        print 'Key not found: '+ str(t_id)
+for l_ in test:
+    l_id ='l_'+str(l_)
+    if l_id in train_lenders:
+        print l_id
+for l_id in test:
+    if l_id in train_lenders:
+        print l_id
+for l_id in test:
+    if l_id not in train_lenders:
+        print l_id
+train_lenders
+for l_id in test:
+    if l_id not in lenders:
+        print l_id
+for l_id in test:
+    if l_id in lenders:
+        print l_id
+for l_id in test:
+    if l_id in lender_joins:
+        print l_id
+def print_details(sort_list):
+    # print details of teams in train_teams sorted by the number of joins
+    for kvpair in train_teams_items:
+        print kvpair[1]
+        t_id = (kvpair[1])
+        try:
+            print teams[str(t_id)]
+        except KeyError:
+            print 'Key not found: '+ str(t_id)
+def print_details(sort_list, orig):
+    # print details of teams in train_teams sorted by the number of joins
+    for kvpair in sort_list:
+        print kvpair[1]
+        t_id = (kvpair[1])
+        try:
+            print orig[str(t_id)]
+        except KeyError:
+            print 'Key not found: '+ str(t_id)
+
+print_details(train_teams_items,teams)
+def print_details(sort_list, orig):
+    # print details of teams in train_teams sorted by the number of joins
+    for kvpair in sort_list:
+        print kvpair[1]
+        t_id = (kvpair[1])
+        try:
+            print orig[t_id]['misc']
+        except KeyError:
+            print 'Key not found: '+ str(t_id)
+
+print_details(train_teams_items,teams)
+def print_details(sort_list, orig):
+    # print details of teams in train_teams sorted by the number of joins
+    for kvpair in sort_list:
+        print kvpair[1]+':'+kvpair[0]
+        t_id = (kvpair[1])
+        try:
+            print orig[t_id]['misc']
+        except KeyError:
+            print 'Key not found: '+ str(t_id)
+
+print_details(train_teams_items,teams)
+def print_details(sort_list, orig):
+    # print details of teams in train_teams sorted by the number of joins
+    for kvpair in sort_list:
+        print str(kvpair[1])+':'+str(kvpair[0])
+        t_id = (kvpair[1])
+        try:
+            print orig[t_id]['misc']
+        except KeyError:
+            print 'Key not found: '+ str(t_id)
+
+print_details(train_teams_items,teams)
+def print_details(sort_list, orig):
+    # print details of teams in train_teams sorted by the number of joins
+    for kvpair in sort_list:
+        print str(kvpair[1])+':'+str(kvpair[0])+':'+orig[kvpair[1]]['misc']
+
+print_details(train_teams_items,teams)
+def print_details(sort_list, orig):
+    # print details of teams in train_teams sorted by the number of joins
+    for kvpair in sort_list:
+        print str(kvpair[1])+':'+str(kvpair[0])+':'+ str(orig[kvpair[1]]['misc'])
+
+print_details(train_teams_items,teams)
+%run ../load_data.py
+def print_details(sort_list, orig):
+    # print details of teams in train_teams sorted by the number of joins
+    for kvpair in sort_list:
+        print str(kvpair[1])+':'+str(kvpair[0])+':'+ str(orig[kvpair[1]]['misc'])
+
+print_details(train_teams_items,teams)
+def print_details(sort_list, orig):
+    # print details of teams in train_teams sorted by the number of joins
+    for kvpair in sort_list:
+        print str(kvpair[1])+':'+str(kvpair[0])+':'+ str(orig[kvpair[1]]['memb_count'])
+
+print_details(train_teams_items,teams)
+%run ../helpers.py
+%run ../load_data.py
+def print_details(sort_list, orig):
+    # print details of teams in train_teams sorted by the number of joins
+    for kvpair in sort_list:
+        print str(kvpair[1])+':'+str(kvpair[0])+':'+ str(orig[kvpair[1]]['memb_count'])
+
+print_details(train_teams_items,teams)
+print teams.keys()
+def print_details(sort_list, orig):
+    # print details of teams in train_teams sorted by the number of joins
+    for kvpair in sort_list:
+        print str(kvpair[1])+':'+str(kvpair[0])+':'+ str(orig[kvpair[1]]['memb_count'])
+
+print_details(train_teams_items,teams)
+print teams[teams.keys()[0]].keys()
+def print_details(sort_list, orig):
+    # print details of teams in train_teams sorted by the number of joins
+    for kvpair in sort_list:
+        print str(kvpair[1])+':'+str(kvpair[0])+':'+ str(orig[kvpair[1]]['memb_count'])
+
+print_details(train_teams_items,teams)
+%run ../helpers.py
+%run ../load_data.py
+reader = read_csv_file('./teams.csv') 
+teams=  parse_teams_csv_data(reader) 
+
+f = open('./train.csv')
+train = f.read()
+train = train.split('\r\n')
+f = open('./test.csv')
+test = f.read()
+test = test.split('\r\n')
+print teams[teams.keys()[0]].keys()
+def print_details(sort_list, orig):
+    # print details of teams in train_teams sorted by the number of joins
+    for kvpair in sort_list:
+        print str(kvpair[1])+':'+str(kvpair[0])+':'+ str(orig[kvpair[1]]['memb_count'])
+
+print_details(train_teams_items,teams)
+def parse_teams_csv_data(reader):
+    ret = {}
+    for rec in reader:
+        ## there are problems with the data. This if statement is a conservative estimate for the lenders                                                                                                                                                                                                                     
+        l = len(rec)
+        ret[rec[0]] = {'id':rec[0],'name':rec[2] ,'loc':rec[4],'theme':rec[3], 'desc':rec[5:l-3], 'date=':rec[1], 'memb_count':rec[l-3], 'loan_count':rec[l-2], 'loan_amt':rec[l-1], 'misc':rec[l-3:l] }
+    return ret
+
+reader = read_csv_file('./teams.csv') 
+teams=  parse_teams_csv_data(reader) 
+
+f = open('./train.csv')
+train = f.read()
+train = train.split('\r\n')
+f = open('./test.csv')
+test = f.read()
+test = test.split('\r\n')
+print train[0]
+print train[-1]
+del train[0]
+del train[-1]   
+teams
+reader = read_csv_file('./teams.csv') 
+teams=  parse_teams_csv_data(reader) 
+
+f = open('./train.csv')
+train = f.read()
+train = train.split('\r\n')
+f = open('./test.csv')
+test = f.read()
+test = test.split('\r\n')
+print teams[teams.keys()[0]]
+print train[0]
+print train[-1]
+del train[0]
+del train[-1]
+print test[0]
+print test[-1]
+del test[0]
+del test[-1]
+print teams[teams.keys()[0]].keys()
+def print_details(sort_list, orig):
+    # print details of teams in train_teams sorted by the number of joins
+    for kvpair in sort_list:
+        print str(kvpair[1])+':'+str(kvpair[0])+':'+ str(orig[kvpair[1]]['memb_count'])
+
+print_details(train_teams_items,teams)
+print teams[teams.keys()[0]].keys()
+def print_details(sort_list, orig):
+    # print details of teams in train_teams sorted by the number of joins
+    for kvpair in sort_list:
+        print str(kvpair[1])+':'+str(kvpair[0])+':'+ str(orig[kvpair[1]]['loan_count'])
+
+print_details(train_teams_items,teams)
+print teams[teams.keys()[0]].keys()
+def print_details(sort_list, orig):
+    # print details of teams in train_teams sorted by the number of joins
+    for kvpair in sort_list:
+        print str(kvpair[1])+':'+str(kvpair[0])+':'+ str(orig[kvpair[1]]['loan_amt'])
+
+print_details(train_teams_items,teams)
+for t in team_mem:
+    print len(team_mem[t])
+for t in team_mem:
+    print t + ':' + len(team_mem[t])
+for t in team_mem:
+    print t + ':' + str(len(team_mem[t]))
+team_mem_items = [(x,y) for y,x in team_mem.items()]
+team_mem_items.sort().reverse()
+for t in team_mem:
+    print t + ':' + str(len(team_mem[t]))
+team_mem_items = [(x,y) for y,x in team_mem.items()]
+team_mem_items.sort()
+team_mem_items.reverse()
+print team_mem_items
+team_mem_items = [(len(x),y) for y,x in team_mem.items()]
+team_mem_items.sort()
+team_mem_items.reverse()
+print team_mem_items
+team_mem_items = [(len(x),y) for y,x in team_mem.items()]
+team_mem_items.sort()
+team_mem_items.reverse()
+for k in team_mem_items:
+    print k[1]
+team_mem_items = [(len(x),y) for y,x in team_mem.items()]
+team_mem_items.sort()
+team_mem_items.reverse()
+print team_mem_items[0:9]
+#for k in team_mem_items:
+#    print k[1]
+team_mem_items = [(len(x),y) for y,x in team_mem.items()]
+team_mem_items.sort()
+team_mem_items.reverse()
+print team_mem_items[0:9][1]
+#for k in team_mem_items:
+#    print k[1]
+team_mem_items = [(len(x),y) for y,x in team_mem.items()]
+team_mem_items.sort()
+team_mem_items.reverse()
+print team_mem_items[0:9]
+#for k in team_mem_items:
+#    print k[1]
+team_mem_items = [(len(x),y) for y,x in team_mem.items()]
+team_mem_items.sort()
+team_mem_items.reverse()
+print team_mem_items[0:20]
+#for k in team_mem_items:
+#    print k[1]
+team_mem_items = [(len(x),y) for y,x in team_mem.items()]
+team_mem_items.sort()
+team_mem_items.reverse()
+top = team_mem_items[0:20]
+top_ts = [x for y,x in top]
+#for k in team_mem_items:
+#    print k[1]
+team_mem_items = [(len(x),y) for y,x in team_mem.items()]
+team_mem_items.sort()
+team_mem_items.reverse()
+top = team_mem_items[0:20]
+top_ts = [x for y,x in top]
+top_ts
+#for k in team_mem_items:
+#    print k[1]
+team_mem_items = [(len(x),y) for y,x in team_mem.items()]
+team_mem_items.sort()
+team_mem_items.reverse()
+top = team_mem_items[0:20]
+top_ts = [x for y,x in top]
+str(top_ts)
+#for k in team_mem_items:
+#    print k[1]
+team_mem_items = [(len(x),y) for y,x in team_mem.items()]
+team_mem_items.sort()
+team_mem_items.reverse()
+top = team_mem_items[0:9]
+top_ts = [x for y,x in top]
+str(top_ts)
+#for k in team_mem_items:
+#    print k[1]
+team_mem_items = [(len(x),y) for y,x in team_mem.items()]
+team_mem_items.sort()
+team_mem_items.reverse()
+top = team_mem_items[0:10]
+top_ts = [x for y,x in top]
+str(top_ts)
+#for k in team_mem_items:
+#    print k[1]
+team_mem_items = [(len(x),y) for y,x in team_mem.items()]
+team_mem_items.sort()
+team_mem_items.reverse()
+top = team_mem_items[0:15]
+top_ts = [x for y,x in top]
+str(top_ts)
+#for k in team_mem_items:
+#    print k[1]
+str(train_teams_items[0:15])
+for kv in train_teams_items[0:15]:
+    if kv[1] in top_ts:
+        print kv[1]
+for kv in train_teams_items[0:15]:
+    if kv[1] not in top_ts:
+        print kv[1]
+str(train_teams_items[0:15])
+for kv in train_teams_items[0:15]:
+    if kv[1] not in top_ts:
+        print kv[1]
+print str(train_teams_items[0:15])
+
+for kv in train_teams_items[0:15]:
+    if kv[1] not in top_ts:
+        print kv[1]
+len(lender_joins)
+for l in train_lenders:
+    print l
+for l in train_lenders:
+    print lenders[l]['country']
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['country']
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['city']
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['city'] + '::' + str(train_lenders[l])
+train_teams = {}
+train_lenders = {}
+for l in train:
+    d = l.split(',')
+    #print d
+    teams_ = d[1].split(' ')
+    for t in teams_:
+        t_n = 't_'+(t.replace('\"',''))
+        if t_n in train_teams:
+            train_teams[t_n]+=1
+        else:
+            train_teams[t_n]=1
+            
+    # add lenders
+    l_id = 'l_'+ d[0]
+    if l_id in train_lenders:
+        train_lenders[l_id]= teams_
+for l in train:
+    if l in lenders:
+        print lenders[l]['city'] + '::' + str(train_lenders[l])
+train_lenders
+train_teams = {}
+train_lenders = {}
+for l in train:
+    d = l.split(',')
+    #print d
+    teams_ = d[1].split(' ')
+    for t in teams_:
+        t_n = 't_'+(t.replace('\"',''))
+        if t_n in train_teams:
+            train_teams[t_n]+=1
+        else:
+            train_teams[t_n]=1
+            
+    # add lenders
+    l_id = 'l_'+ d[0]
+    train_lenders[l_id]= teams_
+train_lenders
+for l in train:
+    if l in lenders:
+        print lenders[l]['city'] + '::' + str(train_lenders[l])
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['city'] + '::' + str(train_lenders[l])
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['city'] + '::' + str([str('t_'+t) for t in train_lenders[l])
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['city'] + '::' + str([str('t_'+t) for t in train_lenders[l]))
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['city'] + '::' + str([str('t_'+t) for t in train_lenders[l]])
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['city'] + '::' + str([teams[('t_'+t)] for t in train_lenders[l]])
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['city'] + '::' + str([teams[('t_'+t)]['loc'] for t in train_lenders[l]])
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['city'] + '::' + str([teams['t_'+t]['loc'] for t in train_lenders[l]])
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['city'] + '::' + str([teams[str('t_'+t)]['loc'] for t in train_lenders[l]])
+train_teams = {}
+train_lenders = {}
+for l in train:
+    d = l.split(',')
+    #print d
+    teams_ = d[1].split(' ')
+    teams_ = ['t_'+(t.replace('\"','')) for t in teams_]
+    for t in teams_:
+        if t in train_teams:
+            train_teams[t]+=1
+        else:
+            train_teams[t]=1
+            
+    # add lenders
+    l_id = 'l_'+ d[0]
+    train_lenders[l_id]= teams_
+train_lenders
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['city'] + '::' + str([teams[str('t_'+t)]['loc'] for t in train_lenders[l]])
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['city'] + '::' + str([teams[t]['loc'] for t in train_lenders[l]])
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['country'] + '::' + str([teams[t]['loc'] for t in train_lenders[l]])
+top
+top_ts
+for t in top_ts:
+    print teams[t]['loc']
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['country'] + '::' + str([teams[t]['loc'] + ' | ' + t for t in train_lenders[l]])
+for t in top_ts:
+    print t + '| ' +teams[t]['loc']
+for l in train:
+    print l
+for l in train:
+    print l[0]
+for l in train_lenders:
+    print l
+for l in test:
+    print l
+for l in test:
+    lenders['l_'+l]
+for l in test:
+    if l in lenders:
+        lenders['l_'+l]
+    else:
+        print l + ': default'
+for l in test:
+    l_id ='l_'+l
+    if l_id in lenders:
+        lenders[l_id]
+    else:
+        print l + ': default'
+for l in test:
+    l_id ='l_'+l
+    if l_id in lenders:
+        lenders[l_id]
+    else:
+        print l_id + ': default'
+for l_id in test:
+    if l_id in lender_joins:
+        print l_id
+for l_id in test:
+    if l_id in lenders:
+        print l_id
+for l_id in test:
+    print l_id
+    if l_id in lenders:
+        print l_id
+for l_id in test:
+    if 'l_'+l_id in lenders:
+        print l_id
+for l_id in test:
+    if 'l_'+l_id not in lenders:
+        print l_id
+for l in test:
+    l_id ='l_'+l
+    print l_id
+    if l_id in lenders:
+        lenders[l_id]
+    else:
+        print l_id + ': default'
+for l in test:
+    l_id ='l_'+l
+    #print l_id
+    if l_id in lenders:
+        print lenders[l_id]
+    else:
+        print l_id + ': default'
+for l in test:
+    l_id ='l_'+l
+    #print l_id
+    if l_id in lenders:
+        print lenders[l_id]['city']
+    else:
+        print l_id + ': default'
+for l in test:
+    l_id ='l_'+l
+    #print l_id
+    if l_id in lenders:
+        print lenders[l_id]['country']
+    else:
+        print l_id + ': default'
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+
+print train_teams_items
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+
+[t.replace('t_') for x,t in train_teams]
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+
+[t.replace('t_','') for x,t in train_teams]
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+
+print [t.replace('t_','') for x,t in train_teams]
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+
+print [t for x,t in train_teams]
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+
+print [t[1] for t in train_teams]
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+
+print [t for t in train_teams]
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+
+print [t for x,t in train_teams_items]
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+
+print [t.replace('t_','') for x,t in train_teams_items]
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+
+t_ids = [t.replace('t_','') for x,t in train_teams_items] 
+join(t_ids,' ')
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+
+t_ids = [t.replace('t_','') for x,t in train_teams_items] 
+t_ids.join(' ')
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+
+t_ids = [t.replace('t_','') for x,t in train_teams_items] 
+string.join(t_ids,' ')
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+
+t_ids = [t.replace('t_','') for x,t in train_teams_items] 
+string.join?
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+
+t_ids = [t.replace('t_','') for x,t in train_teams_items] 
+' '.join(t_ids)
+#train_lenders
+for l_id in test:
+    if 'l_'+l_id not in lenders:
+        #print l_id
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+
+t_ids = [t.replace('t_','') for x,t in train_teams_items] 
+' '.join(t_ids[0:15])
+train_teams_items = [(x,y) for y,x in train_teams.items() ]
+train_teams_items.sort()
+train_teams_items.reverse()
+
+t_ids = [t.replace('t_','') for x,t in train_teams_items] 
+' '.join(t_ids[0:10])
+pref = {'all':'5987 3954 11755 5304 20854 8412 13601 495 2171 14917', 'au':'10612 5987 3954 11755 5304 20854 8412 13601 495 2171'}
+
+for l in test:
+    l_id ='l_'+l
+    #print l_id
+    if l_id in lenders:
+        print lenders[l_id]['country']
+    else:
+        print l_id + ': default'
+pref = {'all':'5987 3954 11755 5304 20854 8412 13601 495 2171 14917', 'au':'10612 5987 3954 11755 5304 20854 8412 13601 495 2171'}
+c_in_test = {}
+for l in test:
+    l_id ='l_'+l
+    #print l_id
+    if l_id in lenders:
+        c_in_test[lenders[l_id]['country']] =1
+    else:
+        print l_id + ': default'
+pref = {'all':'5987 3954 11755 5304 20854 8412 13601 495 2171 14917', 'au':'10612 5987 3954 11755 5304 20854 8412 13601 495 2171'}
+c_in_test = {}
+for l in test:
+    l_id ='l_'+l
+    #print l_id
+    if l_id in lenders:
+        c_in_test[lenders[l_id]['country']] =1
+#    else:
+ #       print l_id + ': default'
+    
+print c_in_test
+pref = {'all':'5987 3954 11755 5304 20854 8412 13601 495 2171 14917', 'au':'10612 5987 3954 11755 5304 20854 8412 13601 495 2171'}
+c_in_test = {}
+for l in test:
+    l_id ='l_'+l
+    #print l_id
+    if l_id in lenders:
+        co = lenders[l_id]['country']
+        if co in c_in_test:
+            c_in_test[co] +=1
+        else:
+            c_in_test[co] =1
+#    else:
+ #       print l_id + ': default'
+    
+print c_in_test
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['country'] + '::' + str([teams[t]['loc']  for t in train_lenders[l]])
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['country'] + '::' + ','.join([teams[t]['loc']  for t in train_lenders[l]])
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['country'] + ',' + ','.join([teams[t]['loc']  for t in train_lenders[l]])
+for l in train_lenders:
+    if l in lenders:
+        print lenders[l]['country'] + ',' + ','.join([teams[t]['loc'] + ':' + t for t in train_lenders[l]])
+pref = {'all':'5987 3954 11755 5304 20854 8412 13601 495 2171 14917', 'au':'10612 5987 3954 11755 5304 20854 8412 13601 495 2171', 'ca':'5304 14276 5102 3954 3942 5987 11755 20854 8412 13601', 'gb':'5987 6146 3954 11755 5304 20854 8412 13601 495 2171'}
+c_in_test = {}
+for l in test:
+    l_id ='l_'+l
+    #print l_id
+    if l_id in lenders:
+        co = lenders[l_id]['country'].lower()
+        if co in c_in_test:
+            c_in_test[co] +=1
+        else:
+            c_in_test[co] =1
+        if 'au' in co:
+            print l_id +',' + pref['au']
+        else:
+            if 'gb' in co:
+                print l_id +',' + pref['au']
+            else:
+                print l_id +',' + pref['all']
+    
+#print c_in_test
+pref = {'all':'5987 3954 11755 5304 20854 8412 13601 495 2171 14917', 'au':'10612 5987 3954 11755 5304 20854 8412 13601 495 2171', 'ca':'5304 14276 5102 3954 3942 5987 11755 20854 8412 13601', 'gb':'5987 6146 3954 11755 5304 20854 8412 13601 495 2171'}
+c_in_test = {}
+for l in test:
+    l_id ='l_'+l
+    #print l_id
+    if l_id in lenders:
+        co = lenders[l_id]['country'].lower()
+        if co in c_in_test:
+            c_in_test[co] +=1
+        else:
+            c_in_test[co] =1
+        if 'au' in co:
+            print l_id +',' + pref['au']
+        else:
+            if 'gb' in co:
+                print l_id +',' + pref['gb']
+            else:
+                if 'ca' in co:
+                    print l_id +',' + pref['ca']
+                else:
+                    print l_id +',' + pref['all']
+    
+#print c_in_test
+pref = {'all':'5987 3954 11755 5304 20854 8412 13601 495 2171 14917', 'au':'10612 5987 3954 11755 5304 20854 8412 13601 495 2171', 'ca':'5304 14276 5102 3954 3942 5987 11755 20854 8412 13601', 'gb':'5987 6146 3954 11755 5304 20854 8412 13601 495 2171'}
+c_in_test = {}
+for l in test:
+    l_id ='l_'+l
+    #print l_id
+    if l_id in lenders:
+        l_id = l_id.replace('l_','')
+        co = lenders[l_id]['country'].lower()
+        if co in c_in_test:
+            c_in_test[co] +=1
+        else:
+            c_in_test[co] =1
+        if 'au' in co:
+            print l_id +',' + pref['au']
+        else:
+            if 'gb' in co:
+                print l_id +',' + pref['gb']
+            else:
+                if 'ca' in co:
+                    print l_id +',' + pref['ca']
+                else:
+                    print l_id +',' + pref['all']
+    
+#print c_in_test
+pref = {'all':'5987 3954 11755 5304 20854 8412 13601 495 2171 14917', 'au':'10612 5987 3954 11755 5304 20854 8412 13601 495 2171', 'ca':'5304 14276 5102 3954 3942 5987 11755 20854 8412 13601', 'gb':'5987 6146 3954 11755 5304 20854 8412 13601 495 2171'}
+c_in_test = {}
+for l in test:
+    l_id ='l_'+l
+    #print l_id
+    if l_id in lenders:
+        co = lenders[l_id]['country'].lower()
+        l_id = l_id.replace('l_','')
+        if co in c_in_test:
+            c_in_test[co] +=1
+        else:
+            c_in_test[co] =1
+        if 'au' in co:
+            print l_id +',' + pref['au']
+        else:
+            if 'gb' in co:
+                print l_id +',' + pref['gb']
+            else:
+                if 'ca' in co:
+                    print l_id +',' + pref['ca']
+                else:
+                    print l_id +',' + pref['all']
+    
+#print c_in_test
+history
